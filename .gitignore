@@ -1,5 +1,57 @@
-/target
-/.idea
-.vscode
-*.iml
+/# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build outputs
+dist/
+build/
+out/
+/.parcel-cache/
+/.next/
+/.turbo/
+
+# Storybook
+storybook-static/
+
+# Environment variables
+.env
+.env.*
+
+# Logs
+logs/
 *.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Tests / coverage
+coverage/
+.nyc_output/
+
+# Cache
+.cache/
+.eslintcache
+.vite/
+
+# Temp
+tmp/
+temp/
+*.tmp
+
+# Lockfiles (optional - keep if you want lockfiles in repo)
+# package-lock.json
+# yarn.lock
+
+# Misc
+*.tgz
+.DS_Store
+/.history/

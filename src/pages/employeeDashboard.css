@@ -1,0 +1,195 @@
+/* ---------- Dashboard Container ---------- */
+.dashboard-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* ---------- Sidebar ---------- */
+.sidebar {
+  width: 250px;
+  background-color: #2b3a4a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;       /* keep content at top */
+
+  gap: 40px;                          /* spacing between logo, menu, logout */
+  padding: 20px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo i {
+  color: #3f51b5;
+  font-size: 1.8em;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 1.1em;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  background-color: #4c5d6f;
+  color: white;
+}
+
+.logout-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+/* ---------- Main Content ---------- */
+.main-content {
+  
+  /* Background fix */
+  background-image: url("../assets/bg.png");
+  background-size: cover;         /* full screen */
+  background-position: center;     /* no shifting */
+  background-repeat: no-repeat;
+
+  min-height: 100vh;               /* ensure full height */
+  box-sizing: border-box;
+}
+
+/* ---------- Page Box ---------- */
+.page-box {
+  width: 100%;
+}
+
+/* ---------- Welcome Card ---------- */
+.card {
+  background-color: rgba(255,255,255,0.85); /* slight opacity so bg is visible */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  padding: 20px;
+  margin-right: 150px;
+}
+
+.welcome-card {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+  min-height: 300px;
+  min-width: 250px;
+}
+
+.profile-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.welcome-title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 0px;
+  margin-right: 10px;
+}
+
+
+.welcome-subtitle {
+  color: #666;
+  font-size: 1rem;
+}
+.image-container {
+    /* Style for the container holding the image/icon */
+    flex-shrink: 0; /* Prevents the image container from shrinking */
+   /* Slightly different background for the image section */
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 60px;
+}
+
+/* ---------- Summary Card ---------- */
+.asset-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.summary-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  background: rgba(255,255,255,0.85); /* so background shows */
+  border-radius: 10px;
+}
+
+.summary-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: rgba(63, 81, 181, 0.1);
+  color: #3f51b5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* ---------- Data Table ---------- */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: rgba(255,255,255,0.9);
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.data-table th {
+  background-color: #3f51b5;
+  color: white;
+}
+
+.welcome-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;  /* NEW: Align content to the left */
+}
